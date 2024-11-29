@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrations Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  body{
+    color: white;
+    font-size: 15px;
+    font-family: Trebuchet MS, sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(BG.jpg);
+    background-repeat: no-repeat;
+  }
+  .maincontainer{
+    background: Black;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    box-align: center;
+    margin-left: 10.5%;
+  }
+  .forms{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+  }
+  .btn{
+    width: 80px;
+  }
+  .SELECT{
+    padding-bottom: 10px;
+  }
+  .textarea{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  </style>
+</head>
+<body>
+  <form>
+  <div class="fluid-container mt-5 maincontainer">
+    <div class="text-center">
+      <h1>Robotics Club Registration Form</h1>
+    </div>
+      <div class="row">
+      <div class="form-group col md-6">
+        <label for="Name">Name</label><br>
+        <input type="textarea" class="form-name forms" id="Name" placeholder="Type your name here."></input>
+      </div>
+      <div class="form-group col md-6">
+        <label for="Age">Age</label><br>
+        <input type="textarea" class="form-age forms" id="Age" placeholder="Type your age here."></input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col md-6">
+        <label for="email">Email Address</label><br>
+        <input type="email" class="form-email address forms" id="email address" placeholder="Type your email address here.">
+      </div>
+      <div class="col md-6">
+        <label for="password">Phone Number</label><br>
+        <input type="Password" class="form-phone number forms" id="phone number" placeholder="Type your phone number here.">
+      </div>
+    </div>
+    <div class="mt-5">
+      <h3>Prefered Robotics Topics</h3>
+      <div class="col">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+     Programming
+    </label>
+      </div>
+      <div class="col">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+     Electronics
+    </label>
+      </div>
+      <div class="col">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+     Mechanical Design
+    </label>
+      </div>
+    </div>
+    <div class="checck mt-3">
+      <h3>Robotics Experience Level</h3>
+      <div class="col">
+    <input type="radio" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+     Beginner
+    </label>
+      </div>
+      <div class="col">
+    <input type="radio" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+     Intermediate
+    </label>
+      </div>
+      <div class="col" style="padding-bottom: 15px;">
+    <input type="radio" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+     Advanced
+  </label>
+    </div>
+  </div>
+     <div class="row-mb-6">
+  <div class="col-mb-6 SELECT">
+      <label><h3>Preferred Robotics Project</h3></label><br>
+     <select id="select" name="select" class="select forms">
+          <option value="placeholder">Pick a project...</option>
+          <option value="Line Following Robot">Line Following Robot</option>
+          <option value="Obstacle Avoidance Robot">Obstacle Avoidance Robot</option>
+          <option value="Voice-Controlled Robot">Voice-Controlled Robot</option>
+          <option value="Autonomous Drone">Autonomous Drone</option></select>
+  </div>
+    <div class="row-mb-6">
+    <div class="col-mb-6 ">
+    <label for="textarea"><h3>Statement of Interest</h3></label><br>
+    <textarea for="textarea" name="textarea" rows="5" cols="100" class="textarea"></textarea><br>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </form>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
